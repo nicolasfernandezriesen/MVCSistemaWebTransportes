@@ -1,0 +1,58 @@
+﻿* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.myHeader {
+    background-color: rgb(117, 178, 27);
+    height: 90px;
+    border-bottom: 5px solid white;
+}
+
+#headerContent {
+    float: left;
+    width: 90%;
+    height: 100%;
+    border-right: 5px solid white;
+    
+}
+
+
+
+#ads {
+    float: left;
+    width: 10%;
+
+}
+
+#section {
+    background-color: rgb(117, 178, 27);
+    height: 700px;
+}
+
+#navBar {
+    float: left;
+    width: 10%;
+    height: 100%;
+    border-right: 5px solid white;
+}
+
+#artFoot{
+    height: 100%;
+}
+
+#article {
+    float: left;
+    width: 90%;
+    height: 80%;
+    border-bottom: 5px solid white;
+}
+
+#footer {
+
+    float: left;
+    height: 10%;
+}

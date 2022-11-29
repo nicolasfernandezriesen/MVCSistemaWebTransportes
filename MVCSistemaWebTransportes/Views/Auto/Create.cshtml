@@ -1,0 +1,36 @@
+﻿@model MVCSistemaWebTransportes.Models.Auto
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h1>Nuevo Auto</h1>
+@using (Html.BeginForm("Create", "Auto", FormMethod.Post))
+{
+<p>
+    @Html.LabelFor(model => model.Marca)
+    @Html.EditorFor(model => model.Marca)
+    @Html.ValidationMessageFor(model => model.Marca)
+</p>
+
+<p>
+    @Html.LabelFor(model => model.Modelo)
+    @Html.EditorFor(model => model.Modelo)
+    @Html.ValidationMessageFor(model => model.Modelo)
+</p>
+
+<p>
+    @Html.LabelFor(model => model.Año)
+    @Html.EditorFor(model => model.Año)
+    @Html.ValidationMessageFor(model => model.Año)
+</p>
+<p>
+    @Html.LabelFor(model => model.Color)
+    @Html.EditorFor(model => model.Color)
+    @Html.ValidationMessageFor(model => model.Color)
+</p>
+<input type="submit" value="Crear" />
+
+@Html.ActionLink("Volver al Indice", "Index", "Auto")
+}
+

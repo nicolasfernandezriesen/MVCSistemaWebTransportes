@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link href="~/Content/main.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="myHeader">
+        <div id="headerContent">
+            <h1>Header content</h1>
+        </div>
+        <div id="ads">
+            <p>Ads content</p>
+        </div>
+    </div>
+    <div id="section">
+        <div id="navBar">
+            @if (IsSectionDefined("navBar"))
+            {
+                @RenderSection("navBar")
+            }
+            else
+            {
+                <p>Zona Nav</p>
+
+            }
+
+
+        </div>
+        <div id="artFoot">
+            <div id="article">
+                @RenderBody()
+
+            </div>
+            <div id="footer">
+                <h3>Footer</h3>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

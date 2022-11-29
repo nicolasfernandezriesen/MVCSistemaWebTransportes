@@ -1,0 +1,26 @@
+﻿@model MVCSistemaWebTransportes.Models.Auto
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Auto</h2>
+<p>Desea eliminar este Auto?</p>
+
+@using (Html.BeginForm("Delete", "Auto", FormMethod.Post))
+{
+<div>
+    <span>@Html.DisplayNameFor(model => model.Marca)</span>
+    <span>@Html.DisplayFor(model => model.Marca)</span>
+    <span>@Html.DisplayNameFor(model => model.Modelo)</span>
+    <span>@Html.DisplayFor(model => model.Modelo)</span>
+    <span>@Html.DisplayNameFor(model => model.Año)</span>
+    <span>@Html.DisplayFor(model => model.Año)</span>
+</div>
+<input type="submit" value="Eliminar" />
+}
+
+<p>
+    @Html.ActionLink("Volver al Index", "Index", "Auto")
+</p>
+

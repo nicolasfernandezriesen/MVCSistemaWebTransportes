@@ -1,0 +1,37 @@
+﻿@model MVCSistemaWebTransportes.Models.Auto
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<fieldset>
+    <legend>Auto Detalle</legend>
+    <div>
+        @Html.DisplayNameFor(model => model.Marca)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Marca)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Modelo)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Modelo)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Año)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Año)
+    </div>
+    <div>
+        @Html.DisplayNameFor(model => model.Color)
+    </div>
+    <div>
+        @Html.DisplayFor(model => model.Color)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Volver al Index", "Index", "Auto")
+</p>
